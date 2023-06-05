@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- <div>navbar here</div> -->
+    <nav class="navbar navbar-expand-lg bg-body-primary bg-primary   ">
+        <div class="container-fluid bg-primary  text-white">
+            <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px"
+                    viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <style>
+                        svg {
+                            fill: #eaebeb
+                        }
+                    </style>
+                    <path
+                        d="M333.5,201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4,238.2,333.5,225,333.5,201.4z M517,188.6 c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1,0-55.8,28.1-54.7,58.5c1,29.3-0.3,67.2-9.8,98.1 c-9.6,31-25.7,50.6-52.2,53.1v28.5c26.4,2.5,42.6,22.1,52.2,53.1c9.5,30.9,10.9,68.8,9.8,98.1c-1.1,30.5,22.7,58.5,54.7,58.5h328.7 c32.1,0,55.8-28.1,54.7-58.5c-1-29.3,0.3-67.2,9.8-98.1c9.6-31,25.7-50.6,52.1-53.1v-28.5C542.7,239.2,526.5,219.6,517,188.6z M300.2,375.1h-97.9V136.8h97.4c43.3,0,71.7,23.4,71.7,59.4c0,25.3-19.1,47.9-43.5,51.8v1.3c33.2,3.6,55.5,26.6,55.5,58.3 C383.4,349.7,352.1,375.1,300.2,375.1z M290.2,266.4h-50.1v78.4h52.3c34.2,0,52.3-13.7,52.3-39.5 C344.7,279.6,326.1,266.4,290.2,266.4z" />
+                </svg>
+            </a>
+
+            <a class="navbar-brand text-white"
+                href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Docs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="/">Examples</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page"
+                            href="https://fontawesome.com/icons">Icons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page"
+                            href="https://nicepage.com/c/features-website-templates">Themes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/main.html">Blog</a>
+                    </li>
+
+
+                </ul>
+
+                <form class="d-flex position-absolute top-50 start-50 translate-middle" role="search">
+
+                    <input class="form-control me-2 bg-primary " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light " type="submit"> <a
+                            class="text-light link-offset-2 link-underline link-underline-opacity-0"
+                            href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"> Search </a></button>
+
+                </form>
+                <div class="m-5  mb-0 mt-0  ">
+                    <ul class="nav m-5 mb-0 mt-0 p-1  ">
+                        <li class="nav-item p-1">
+                            <a href="https://twitter.com/getbootstrap"><svg xmlns="http://www.w3.org/2000/svg"
+                                    height="15px"
+                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #e8eaed
+                                        }
+                                    </style>
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                </svg></a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a href="https://github.com/twbs"><svg xmlns="http://www.w3.org/2000/svg" height="15px"
+                                    viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #eff1f6
+                                        }
+                                    </style>
+                                    <path
+                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                </svg></a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a href="https://opencollective.com/bootstrap"><svg xmlns="http://www.w3.org/2000/svg"
+                                    height="1em"
+                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
+                                </svg></a>
+                        </li>
+                        <li class="nav-item p-1 opacity-50">
+                            <p>|</p>
+                        </li>
+                        <li class="nav-item p-1 ">
+                            <div class="btn-group">
+                                <a class=" bg-primary  text-white dropdown-toggle link-offset-2 link-underline link-underline-opacity-0"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    v5.3
+                                </a>
+                                <ul class="dropdown-menu bg-dark text-light ">
+                                    <li class="nav-link disabled text-light opacity-50">v5 releases</li>
+                                    <li><a class="link-offset-2 link-underline link-underline-opacity-0 text-light opacity-50"
+                                            href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">
+                                            v5.3.x </a></li>
+                                    <li><a class="link-offset-2 link-underline link-underline-opacity-0 text-light opacity-50"
+                                            href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">
+                                            v5.2.3 </a></li>
+                                    <li><a class="link-offset-2 link-underline link-underline-opacity-0 text-light opacity-50"
+                                            href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">
+                                            v5.1.3</a></li>
+                                    <li><a class="link-offset-2 link-underline link-underline-opacity-0 text-light opacity-50"
+                                            href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">v5.0.2
+                                        </a> </li>
+                                    <li>
+                                        <hr class="d-none d-md-block my-2 ms-3">
+                                    </li>
+                                    <li class="nav-link disabled text-light opacity-50">previous releases</li>
+                                    <li><a class="link-offset-2 link-underline link-underline-opacity-0 text-light opacity-50"
+                                            href="https://getbootstrap.com/docs/4.6/"> v4.6x </a></li>
+                                    <li><a class="link-offset-2 link-underline link-underline-opacity-0 text-light opacity-50"
+                                            href="https://getbootstrap.com/docs/3.4/"> v3.4.1</a> </li>
+                                    <li><a class="link-offset-2 link-underline link-underline-opacity-0 text-light opacity-50"
+                                            href="https://getbootstrap.com/docs/3.4/">v2.3.2</a> </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item p-1 opacity-50">
+                            <p>|</p>
+                        </li>
+                        <li class="nav-item p-1 ml-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #dce1ea
+                                    }
+                                </style>
+                                <path
+                                    d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" />
+                            </svg>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- <div>header section here</div> -->
+
+    <div class="flex-row d-flex ">
+        <div class="container text-light m-5">
+            <div>
+
+                <div class="d-flex p-2 fs-1 fw-semibold">Examples</div>
+                <div class="d-flex p-2  fs-5 opacity-50">Quickly get a project started with any of our examples
+                    ranging
+                    from using parts of the framework to custom
+                    components and layouts.</div>
+            </div>
+            <div class="d-flex flex-row mb-3">
+                <div class=" p-2 fs-1 fw-semibold "><button type="button" class="btn  btn-lg bd-btn-lg btn-primary ">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #f3f6fb
+                                }
+                            </style>
+                            <path
+                                d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
+                        </svg><a class="link-offset-2 link-underline link-underline-opacity 0 text-light" href="https://github.com/twbs/bootstrap/releases/download/v5.3.0/bootstrap-5.3.0-examples.zip"> Download Examples</a></button></div>
+                <div class=" p-2 fs-1 fw-semibold"><button type="button"
+                        class="btn text-secondary btn-dark border-secondary btn-lg"> <a class="link-offset-2 link-underline link-underline-opacity-0 opacity-50 text-light" href="https://github.com/twbs/bootstrap/archive/v5.3.0.zip">Download Source Code</a> </button></div>
+            </div>
+
+
+        </div>
+        <div class="d-flex   bg-info bg-opacity-10 border border-success  border-opacity-25"
+            style="margin-top: 100px; margin-bottom: 100px; margin-right: 50px;">
+            <div class="p-2 flex-fill text-light w-50"><img
+                    src="https://cdn4.buysellads.net/uu/1/127419/1670531697-AdobeTeams.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="d-flex flex-column ">2 <div class="p-2 text-light opacity-50 fw-light">Adobe Creative Cloud for
+                    Teams. Put creativity to work.
+                </div>
+                <div class="p-2 text-light  opacity-50 fw-light">ads via Carbon</div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- <div>break line</div> -->
+    <div class="text-success opacity-100">
+        <hr>
+    </div>
+
+    <div class="container m-5">
+        <p class="fs-2 text-light fw-semibold">Starters</p>
+        <p class="fs-6 text-light opacity-50">
+            Functional examples of using Bootstrap in common JS frameworks like Webpack, Parcel, Vite, and more you can
+            edit in StackBlitz.</p>
+
+        <div class="container  text-light ">
+            <div class="row row-cols-3">
+
+                <!-- <div>one card of box</div> -->
+                <div class="col p-3 pb-0 mb-3 pt-0">
+                    <div class="d-flex flex-row">
+                        <p class="mb-0 mt-1 m-3"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #f3f6fb
+                                    }
+                                </style>
+                                <path
+                                    d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
+                            </svg> </p>
+                        <div class="d-flex flex-column ">2
+                            <p><a class=" link-offset-1 text-info fw-semibold fs-5" href="https://github.com/twbs/examples/tree/main/starter/"> CDN starter</a></p>
+                            <p class="opacity-50 p-0 m-1">
+                                Instantly include Bootstrap's compiled CSS and JavaScript via the jsDelivr CDN.
+                            </p>
+                            <div class="d-flex flex-row ">
+                                <svg class="opacity-50 m-1 mt-1 mr-1" xmlns="http://www.w3.org/2000/svg" height="15px"
+                                    viewBox="0 0 400 600"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #aec7ea
+                                        }
+                                    </style>
+                                    <path
+                                        d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z" />
+                                </svg>
+                                <p class="opacity-25 m-2 mt-0 "><a class="  text-light" href="https://stackblitz.com/github/twbs/examples/tree/main/starter?file=index.html"> Edit in StackBlitz</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3 pb-0 mb-3 pt-0">
+                    <div class="d-flex flex-row">
+                        <p class="mb-0 mt-1 m-3"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #f3f6fb
+                                    }
+                                </style>
+                                <path
+                                    d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
+                            </svg> </p>
+                        <div class="d-flex flex-column ">2
+                            <p><a class=" link-offset-1 text-info fw-semibold fs-5" href="https://github.com/twbs/examples/tree/main/sass-js/"> Sass & JS</a></p>
+                            <p class="opacity-50 p-0 m-1">
+                                Use npm to import and compile Bootstrap's Sass with Autoprefixer and Stylelint, plus our
+                                bundled JavaScript.
+                            </p>
+                            <div class="d-flex flex-row ">
+                                <svg class="opacity-50 m-1 mt-1 mr-1" xmlns="http://www.w3.org/2000/svg" height="15px"
+                                    viewBox="0 0 400 600"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #aec7ea
+                                        }
+                                    </style>
+                                    <path
+                                        d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z" />
+                                </svg>
+                                <p class="opacity-25 m-2 mt-0 "><a class="  text-light" href="https://stackblitz.com/github/twbs/examples/tree/main/sass-js?file=index.html"> Edit in StackBlitz</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3 pb-0 mb-3 pt-0">
+                    <div class="d-flex flex-row">
+                        <p class="mb-0 mt-1 m-3"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #f3f6fb
+                                    }
+                                </style>
+                                <path
+                                    d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
+                            </svg> </p>
+                        <div class="d-flex flex-column ">2
+                            <p><a class=" link-offset-1 text-info fw-semibold fs-5" href="https://github.com/twbs/examples/tree/main/sass-js-esm/">Sass & ESM JS</a></p>
+                            <p class="opacity-50 p-0 m-1">
+                                Import and compile Bootstrap's Sass with Autoprefixer and Stylelint, and compile our
+                                source JavaScript with an ESM shim.
+                            </p>
+                            <div class="d-flex flex-row ">
+                                <svg class="opacity-50 m-1 mt-1 mr-1" xmlns="http://www.w3.org/2000/svg" height="15px"
+                                    viewBox="0 0 400 600"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #aec7ea
+                                        }
+                                    </style>
+                                    <path
+                                        d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z" />
+                                </svg>
+                                <p class="opacity-25 m-2 mt-0 "><a class="  text-light" href="https://stackblitz.com/github/twbs/examples/tree/main/sass-js-esm?file=index.html"> Edit in StackBlitz</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3 pb-0 mb-3 pt-0">
+                    <div class="d-flex flex-row">
+                        <p class="mb-0 mt-1 m-3"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #f3f6fb
+                                    }
+                                </style>
+                                <path
+                                    d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
+                            </svg> </p>
+                        <div class="d-flex flex-column ">2
+                            <p><a class=" link-offset-1 text-info fw-semibold fs-5" href="https://github.com/twbs/examples/tree/main/color-modes/"> Bootstrap color modes</a>
+                            </p>
+                            <p class="opacity-50 p-0 m-1">
+                                Import and compile Bootstrap's Sass with Stylelint, and the Bootstrap color modes.
+                            </p>
+                            <div class="d-flex flex-row ">
+                                <svg class="opacity-50 m-1 mt-1 mr-1" xmlns="http://www.w3.org/2000/svg" height="15px"
+                                    viewBox="0 0 400 600"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #aec7ea
+                                        }
+                                    </style>
+                                    <path
+                                        d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z" />
+                                </svg>
+                                <p class="opacity-25 m-2 mt-0 "><a class="  text-light" href="https://stackblitz.com/github/twbs/examples/tree/main/react-nextjs?file=src%2Fpages%2Findex.tsx"> Edit in StackBlitz</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3 pb-0 mb-3 pt-0">
+                    <div class="d-flex flex-row">
+                        <p class="mb-0 mt-1 m-3"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #f3f6fb
+                                    }
+                                </style>
+                                <path
+                                    d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
+                            </svg> </p>
+                        <div class="d-flex flex-column ">2
+                            <p><a class=" link-offset-1 text-info fw-semibold fs-5" href="https://stackblitz.com/github/twbs/examples/tree/main/react-nextjs?file=src%2Fpages%2Findex.tsx"> Bootstrap Icons</a></p>
+                            <p class="opacity-50 p-0 m-1">
+                                Import and compile Bootstrap's Sass with Stylelint, PurgeCSS, and the Bootstrap Icons
+                                web font.
+                            </p>
+                            <div class="d-flex flex-row ">
+                                <svg class="opacity-50 m-1 mt-1 mr-1" xmlns="http://www.w3.org/2000/svg" height="15px"
+                                    viewBox="0 0 400 600"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #aec7ea
+                                        }
+                                    </style>
+                                    <path
+                                        d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z" />
+                                </svg>
+                                <p class="opacity-25 m-2 mt-0 "><a class="  text-light" href="https://stackblitz.com/github/twbs/examples/tree/main/parcel?file=src%2Findex.html"> Edit in StackBlitz</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3 pb-0 mb-3 pt-0">
+                    <div class="d-flex flex-row">
+                        <p class="mb-0 mt-1 m-3"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #f3f6fb
+                                    }
+                                </style>
+                                <path
+                                    d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
+                            </svg> </p>
+                        <div class="d-flex flex-column ">2
+                            <p><a class=" link-offset-1 text-info fw-semibold fs-5" href="https://github.com/twbs/examples/tree/main/parcel/"> Parcel</a></p>
+                            <p class="opacity-50 p-0 m-1">
+                                Import and bundle Bootstrap's source Sass and JavaScript via Parcel.
+                            </p>
+                            <div class="d-flex flex-row ">
+                                <svg class="opacity-50 m-1 mt-1 mr-1" xmlns="http://www.w3.org/2000/svg" height="15px"
+                                    viewBox="0 0 400 600"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #aec7ea
+                                        }
+                                    </style>
+                                    <path
+                                        d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z" />
+                                </svg>
+                                <p class="opacity-25 m-2 mt-0 "><a class="  text-light" href="https://stackblitz.com/github/twbs/examples/tree/main/parcel?file=src%2Findex.html"> Edit in StackBlitz</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3 pb-0 mb-3 pt-0">
+                    <div class="d-flex flex-row">
+                        <p class="mb-0 mt-1 m-3"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #f3f6fb
+                                    }
+                                </style>
+                                <path
+                                    d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
+                            </svg> </p>
+                        <div class="d-flex flex-column ">2
+                            <p><a class=" link-offset-1 text-info fw-semibold fs-5" href="https://github.com/twbs/examples/tree/main/react-nextjs/"> React</a></p>
+                            <p class="opacity-50 p-0 m-1">
+                                Import and bundle Bootstrap's source Sass and JavaScript with React, Next.js, and React
+                                Bootstrap.
+                            </p>
+                            <div class="d-flex flex-row ">
+                                <svg class="opacity-50 m-1 mt-1 mr-1" xmlns="http://www.w3.org/2000/svg" height="15px"
+                                    viewBox="0 0 400 600"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #aec7ea
+                                        }
+                                    </style>
+                                    <path
+                                        d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z" />
+                                </svg>
+                                <p class="opacity-25 m-2 mt-0 "><a class="  text-light" href="https://stackblitz.com/github/twbs/examples/tree/main/vite?file=index.html"> Edit in StackBlitz</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3 pb-0 mb-3 pt-0">
+                    <div class="d-flex flex-row">
+                        <p class="mb-0 mt-1 m-3"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #f3f6fb
+                                    }
+                                </style>
+                                <path
+                                    d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
+                            </svg> </p>
+                        <div class="d-flex flex-column ">2
+                            <p><a class=" link-offset-1 text-info fw-semibold fs-5" href="https://github.com/twbs/examples/tree/main/vue/"> Vite</a></p>
+                            <p class="opacity-50 p-0 m-1">
+                                Import and bundle Bootstrap's source Sass and JavaScript with Vite.
+                            </p>
+                            <div class="d-flex flex-row ">
+                                <svg class="opacity-50 m-1 mt-1 mr-1" xmlns="http://www.w3.org/2000/svg" height="15px"
+                                    viewBox="0 0 400 600"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #aec7ea
+                                        }
+                                    </style>
+                                    <path
+                                        d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z" />
+                                </svg>
+                                <p class="opacity-25 m-2 mt-0 "><a class="  text-light" href="https://stackblitz.com/github/twbs/examples/tree/main/vite?file=index.html"> Edit in StackBlitz</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3 pb-0 mb-3 pt-0">
+                    <div class="d-flex flex-row">
+                        <p class="mb-0 mt-1 m-3"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #f3f6fb
+                                    }
+                                </style>
+                                <path
+                                    d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
+                            </svg> </p>
+                        <div class="d-flex flex-column ">2
+                            <p><a class=" link-offset-1 text-info fw-semibold fs-5" href="https://github.com/twbs/examples/tree/main/vue/"> Vue</a></p>
+                            <p class="opacity-50 p-0 m-1">
+                                Import and bundle Bootstrap's source Sass and JavaScript with Vue and Vite.
+                            </p>
+                            <div class="d-flex flex-row ">
+                                <svg class="opacity-50 m-1 mt-1 mr-1" xmlns="http://www.w3.org/2000/svg" height="15px"
+                                    viewBox="0 0 400 600"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #aec7ea
+                                        }
+                                    </style>
+                                    <path
+                                        d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z" />
+                                </svg>
+                                <p class="opacity-25 m-2 mt-0 "><a class="  text-light" href="https://stackblitz.com/github/twbs/examples/tree/main/vite?file=index.html"> Edit in StackBlitz</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3 pb-0 mb-3 pt-0">
+                    <div class="d-flex flex-row">
+                        <p class="mb-0 mt-1 m-3"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #f3f6fb
+                                    }
+                                </style>
+                                <path
+                                    d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z" />
+                            </svg> </p>
+                        <div class="d-flex flex-column ">2
+                            <p><a class=" link-offset-1 text-info fw-semibold fs-5" href="https://github.com/twbs/examples/tree/main/webpack/"> Webpack</a></p>
+                            <p class="opacity-50 p-0 m-1">
+                                Import and bundle Bootstrap's source Sass and JavaScript with Webpack.
+                            </p>
+                            <div class="d-flex flex-row ">
+                                <svg class="opacity-50 m-1 mt-1 mr-1" xmlns="http://www.w3.org/2000/svg" height="15px"
+                                    viewBox="0 0 400 600"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #aec7ea
+                                        }
+                                    </style>
+                                    <path
+                                        d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z" />
+                                </svg>
+                                <p class="opacity-25 m-2 mt-0 "><a class="  text-light" href="https://stackblitz.com/github/twbs/examples/tree/main/vite?file=index.html"> Edit in StackBlitz</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="bg-dark bg-gradient">
+        <div class="container ">
+
+            <div class="d-flex flex-row">
+                <div class="container text-light m-4">
+                    <p class=" fs-4"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #f3f6fb
+                                }
+                            </style>
+                            <path
+                                d="M333.5,201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4,238.2,333.5,225,333.5,201.4z M517,188.6 c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1,0-55.8,28.1-54.7,58.5c1,29.3-0.3,67.2-9.8,98.1 c-9.6,31-25.7,50.6-52.2,53.1v28.5c26.4,2.5,42.6,22.1,52.2,53.1c9.5,30.9,10.9,68.8,9.8,98.1c-1.1,30.5,22.7,58.5,54.7,58.5h328.7 c32.1,0,55.8-28.1,54.7-58.5c-1-29.3,0.3-67.2,9.8-98.1c9.6-31,25.7-50.6,52.1-53.1v-28.5C542.7,239.2,526.5,219.6,517,188.6z M300.2,375.1h-97.9V136.8h97.4c43.3,0,71.7,23.4,71.7,59.4c0,25.3-19.1,47.9-43.5,51.8v1.3c33.2,3.6,55.5,26.6,55.5,58.3 C383.4,349.7,352.1,375.1,300.2,375.1z M290.2,266.4h-50.1v78.4h52.3c34.2,0,52.3-13.7,52.3-39.5 C344.7,279.6,326.1,266.4,290.2,266.4z" />
+                        </svg><a href="/">
+                        Bootstrap</a></p>
+                    <div class="opacity-50">
+                        <p>Designed and built with all the love in the world by the Bootstrap team with the help of our
+                            contributors.</p>
+                        <p> Code licensed MIT, docs CC BY 3.0.</p>
+                        <p>Currently v5.3.0.</p>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="d-flex flex-column m-4 ">
+                        <p class="fs-5 text-light opacity-50">Links</p>
+                        <a href="" class=" text-light opacity-50 link-underline-opacity-0 link-offset-2 link-underline">
+                            Home</a>
+                        <a href=""
+                            class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">Docs</a>
+                        <a href="" class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline""> Examples</a>
+                        <a href="" class=" text-light opacity-50 link-underline-opacity-0 link-offset-2
+                            link-underline">Icons</a>
+                        <a href=""
+                            class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">Themes
+                        </a>
+                        <a href="/main.html" class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">
+                            Blog</a>
+                        <a href="" class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">
+                            Swag Store</a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="d-flex flex-column m-4 ">
+                        <p class="fs-5 text-light opacity-50">Guides</p>
+                        <a href="" class=" text-light opacity-50 link-underline-opacity-0 link-offset-2 link-underline">
+                            Getting started
+                        </a>
+                        <a href=""
+                            class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">Starter
+                            template</a>
+                        <a href="" class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline""> Webpack</a>
+                        <a href="" class=" text-light opacity-50 link-underline-opacity-0 link-offset-2
+                            link-underline">Parcel</a>
+                        <a href=""
+                            class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">Vite
+                        </a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="d-flex flex-column m-4 ">
+                        <p class="fs-5 text-light opacity-50">Projects
+                        </p>
+                        <a href="" class=" text-light opacity-50 link-underline-opacity-0 link-offset-2 link-underline">
+                            Bootstrap 5</a>
+                        <a href=""
+                            class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">Bootstrap
+                            4</a>
+                        <a href="" class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline""> Icons</a>
+                        <a href="" class=" text-light opacity-50 link-underline-opacity-0 link-offset-2
+                            link-underline">RFS</a>
+                        <a href=""
+                            class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">Examples
+                            repo </a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="d-flex flex-column m-4 ">
+                        <p class="fs-5 text-light opacity-50">Community
+                        </p>
+                        <a href="" class=" text-light opacity-50 link-underline-opacity-0 link-offset-2 link-underline">
+                            Issues</a>
+                        <a href=""
+                            class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">Discussions</a>
+                        <a href="" class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline""> Corporate sponsors</a>
+                        <a href="" class=" text-light opacity-50 link-underline-opacity-0 link-offset-2
+                            link-underline">Open Collective</a>
+                        <a href=""
+                            class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">Stack
+                            Overflow </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

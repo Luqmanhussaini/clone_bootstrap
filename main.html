@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg bg-body-primary bg-primary   ">
+        <div class="container-fluid bg-primary  text-white">
+            <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px"
+                    viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <style>
+                        svg {
+                            fill: #eaebeb
+                        }
+                    </style>
+                    <path
+                        d="M333.5,201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4,238.2,333.5,225,333.5,201.4z M517,188.6 c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1,0-55.8,28.1-54.7,58.5c1,29.3-0.3,67.2-9.8,98.1 c-9.6,31-25.7,50.6-52.2,53.1v28.5c26.4,2.5,42.6,22.1,52.2,53.1c9.5,30.9,10.9,68.8,9.8,98.1c-1.1,30.5,22.7,58.5,54.7,58.5h328.7 c32.1,0,55.8-28.1,54.7-58.5c-1-29.3,0.3-67.2,9.8-98.1c9.6-31,25.7-50.6,52.1-53.1v-28.5C542.7,239.2,526.5,219.6,517,188.6z M300.2,375.1h-97.9V136.8h97.4c43.3,0,71.7,23.4,71.7,59.4c0,25.3-19.1,47.9-43.5,51.8v1.3c33.2,3.6,55.5,26.6,55.5,58.3 C383.4,349.7,352.1,375.1,300.2,375.1z M290.2,266.4h-50.1v78.4h52.3c34.2,0,52.3-13.7,52.3-39.5 C344.7,279.6,326.1,266.4,290.2,266.4z" />
+                </svg>
+            </a>
+
+            <a class="navbar-brand text-white"
+                href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Docs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="/">Examples</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page"
+                            href="https://fontawesome.com/icons">Icons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page"
+                            href="https://nicepage.com/c/features-website-templates">Themes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Blog</a>
+                    </li>
+
+
+                </ul>
+
+                <form class="d-flex position-absolute top-50 start-50 translate-middle" role="search">
+
+                    <input class="form-control me-2 bg-primary " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light " type="submit"> <a
+                            class="text-light link-offset-2 link-underline link-underline-opacity-0"
+                            href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"> Search </a></button>
+
+                </form>
+                <div class="m-5  mb-0 mt-0  ">
+                    <ul class="nav m-5 mb-0 mt-0 p-1  ">
+                        <li class="nav-item p-1">
+                            <a href="https://twitter.com/getbootstrap"><svg xmlns="http://www.w3.org/2000/svg"
+                                    height="15px"
+                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #e8eaed
+                                        }
+                                    </style>
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                </svg></a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a href="https://github.com/twbs"><svg xmlns="http://www.w3.org/2000/svg" height="15px"
+                                    viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #eff1f6
+                                        }
+                                    </style>
+                                    <path
+                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                </svg></a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a href="https://opencollective.com/bootstrap"><svg xmlns="http://www.w3.org/2000/svg"
+                                    height="1em"
+                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
+                                </svg></a>
+                        </li>
+                        <li class="nav-item p-1 opacity-50">
+                            <p>|</p>
+                        </li>
+                        <li class="nav-item p-1 ">
+                            <div class="btn-group">
+                                <a class=" bg-primary  text-white dropdown-toggle link-offset-2 link-underline link-underline-opacity-0"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    v5.3
+                                </a>
+                                <ul class="dropdown-menu bg-dark text-light ">
+                                    <li class="nav-link disabled text-light opacity-50">v5 releases</li>
+                                    <li><a class="link-offset-2 link-underline link-underline-opacity-0 text-light opacity-50"
+                                            href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">
+                                            v5.3.x </a></li>
+                                    <li><a class="link-offset-2 link-underline link-underline-opacity-0 text-light opacity-50"
+                                            href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">
+                                            v5.2.3 </a></li>
+                                    <li><a class="link-offset-2 link-underline link-underline-opacity-0 text-light opacity-50"
+                                            href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">
+                                            v5.1.3</a></li>
+                                    <li><a class="link-offset-2 link-underline link-underline-opacity-0 text-light opacity-50"
+                                            href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">v5.0.2
+                                        </a> </li>
+                                    <li>
+                                        <hr class="d-none d-md-block my-2 ms-3">
+                                    </li>
+                                    <li class="nav-link disabled text-light opacity-50">previous releases</li>
+                                    <li><a class="link-offset-2 link-underline link-underline-opacity-0 text-light opacity-50"
+                                            href="https://getbootstrap.com/docs/4.6/"> v4.6x </a></li>
+                                    <li><a class="link-offset-2 link-underline link-underline-opacity-0 text-light opacity-50"
+                                            href="https://getbootstrap.com/docs/3.4/"> v3.4.1</a> </li>
+                                    <li><a class="link-offset-2 link-underline link-underline-opacity-0 text-light opacity-50"
+                                            href="https://getbootstrap.com/docs/3.4/">v2.3.2</a> </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item p-1 opacity-50">
+                            <p>|</p>
+                        </li>
+                        <li class="nav-item p-1 ml-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #dce1ea
+                                    }
+                                </style>
+                                <path
+                                    d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" />
+                            </svg>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="bg-dark bg-gradient">
+        <div class="container text-center ">
+            <svg class="m-5" xmlns="http://www.w3.org/2000/svg" height="150px"
+                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                    svg {
+                        fill: #ebeef4
+                    }
+                </style>
+                <path
+                    d="M333.5,201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4,238.2,333.5,225,333.5,201.4z M517,188.6 c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1,0-55.8,28.1-54.7,58.5c1,29.3-0.3,67.2-9.8,98.1 c-9.6,31-25.7,50.6-52.2,53.1v28.5c26.4,2.5,42.6,22.1,52.2,53.1c9.5,30.9,10.9,68.8,9.8,98.1c-1.1,30.5,22.7,58.5,54.7,58.5h328.7 c32.1,0,55.8-28.1,54.7-58.5c-1-29.3,0.3-67.2,9.8-98.1c9.6-31,25.7-50.6,52.1-53.1v-28.5C542.7,239.2,526.5,219.6,517,188.6z M300.2,375.1h-97.9V136.8h97.4c43.3,0,71.7,23.4,71.7,59.4c0,25.3-19.1,47.9-43.5,51.8v1.3c33.2,3.6,55.5,26.6,55.5,58.3 C383.4,349.7,352.1,375.1,300.2,375.1z M290.2,266.4h-50.1v78.4h52.3c34.2,0,52.3-13.7,52.3-39.5 C344.7,279.6,326.1,266.4,290.2,266.4z" />
+            </svg>
+
+        </div>
+        <div class="d-flex flex-row">
+            <div class="text-light">
+                <div class="container text-start m-5 fs-6  ">
+                    <p> Welcome to the bootstrap website where you will get all type of templates to reduce the
+                        complexity
+                        of your building websites.
+                    </p>
+                    <p>Using basic forms we can modify the websites</p>
+                    <p>Handling the actions of the websites</p>
+                    <p>Styling your page </p>
+                    <div class="text-secondary opacity-100">
+                        <hr>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="d-flex "
+                            style='background-image: url("https://themeforest.img.customer.envatousercontent.com/files/448781458/preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=8e55b51553086118073b917211a7dc0f") ; margin-top:60px; margin-right:120px;background-size: cover;width: 325px;height:225px;'>
+
+                            <div class="card-body ">
+                            </div>
+                        </div>
+                        <div class="d-flex"style='background-image: url("https://www.syntacticsinc.com/wp-content/uploads/2022/03/01-Astra-e1647414222310.png") ; margin-top:60px;background-size: cover;width: 325px;height:225px;'>
+
+                            <div class="card-body ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column text-center align-center m-5 mt-0">
+                <div class="text-light text-center align-center fs-3 p-2 pt-0">Templates</div>
+                <div class=""
+                    style='background-image: url("https://blog.boxmode.com/wp-content/uploads/2020/09/designart.jpg") ;background-repeat: no-repeat; background-size: cover;width: 300px;height:200px;'>
+
+                    <div class="card-body ">
+                        <h5 class="card-title">Template </h5>
+                        <p class="card-text">Do it yourself</p>
+                    </div>
+                </div>
+                <div class="text-light text-center align-center fs-3 p-2 pt-0">Icons</div>
+                <div class=""
+                    style='background-image: url("data:image/png;base64,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") ; background-size: cover;width: 300px;height:200px;'>
+
+                    <div class="card-body ">
+                        <h5 class="card-title"> </h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark bg-gradient">
+        <div class="container ">
+
+            <div class="d-flex flex-row">
+                <div class="container text-light m-4">
+                    <p class=" fs-4"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #f3f6fb
+                                }
+                            </style>
+                            <path
+                                d="M333.5,201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4,238.2,333.5,225,333.5,201.4z M517,188.6 c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1,0-55.8,28.1-54.7,58.5c1,29.3-0.3,67.2-9.8,98.1 c-9.6,31-25.7,50.6-52.2,53.1v28.5c26.4,2.5,42.6,22.1,52.2,53.1c9.5,30.9,10.9,68.8,9.8,98.1c-1.1,30.5,22.7,58.5,54.7,58.5h328.7 c32.1,0,55.8-28.1,54.7-58.5c-1-29.3,0.3-67.2,9.8-98.1c9.6-31,25.7-50.6,52.1-53.1v-28.5C542.7,239.2,526.5,219.6,517,188.6z M300.2,375.1h-97.9V136.8h97.4c43.3,0,71.7,23.4,71.7,59.4c0,25.3-19.1,47.9-43.5,51.8v1.3c33.2,3.6,55.5,26.6,55.5,58.3 C383.4,349.7,352.1,375.1,300.2,375.1z M290.2,266.4h-50.1v78.4h52.3c34.2,0,52.3-13.7,52.3-39.5 C344.7,279.6,326.1,266.4,290.2,266.4z" />
+                        </svg><a class="link-offset-2 link-underline link-underline-opacity-0 text-light" href="/">
+                        Bootstrap</a></p>
+                    <div class="opacity-50">
+                        <p>Designed and built with all the love in the world by the Bootstrap team with the help of our
+                            contributors.</p>
+                        <p> Code licensed MIT, docs CC BY 3.0.</p>
+                        <p>Currently v5.3.0.</p>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="d-flex flex-column m-4 ">
+                        <p class="fs-5 text-light opacity-50">Links</p>
+                        <a href="" class=" text-light opacity-50 link-underline-opacity-0 link-offset-2 link-underline">
+                            Home</a>
+                        <a href=""
+                            class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">Docs</a>
+                        <a href="" class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline""> Examples</a>
+                        <a href="" class=" text-light opacity-50 link-underline-opacity-0 link-offset-2
+                            link-underline">Icons</a>
+                        <a href=""
+                            class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">Themes
+                        </a>
+                        <a href="" class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">
+                            Blog</a>
+                        <a href="" class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">
+                            Swag Store</a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="d-flex flex-column m-4 ">
+                        <p class="fs-5 text-light opacity-50">Guides</p>
+                        <a href="" class=" text-light opacity-50 link-underline-opacity-0 link-offset-2 link-underline">
+                            Getting started
+                        </a>
+                        <a href=""
+                            class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">Starter
+                            template</a>
+                        <a href="" class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline""> Webpack</a>
+                        <a href="" class=" text-light opacity-50 link-underline-opacity-0 link-offset-2
+                            link-underline">Parcel</a>
+                        <a href=""
+                            class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">Vite
+                        </a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="d-flex flex-column m-4 ">
+                        <p class="fs-5 text-light opacity-50">Projects
+                        </p>
+                        <a href="" class=" text-light opacity-50 link-underline-opacity-0 link-offset-2 link-underline">
+                            Bootstrap 5</a>
+                        <a href=""
+                            class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">Bootstrap
+                            4</a>
+                        <a href="" class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline""> Icons</a>
+                        <a href="" class=" text-light opacity-50 link-underline-opacity-0 link-offset-2
+                            link-underline">RFS</a>
+                        <a href=""
+                            class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">Examples
+                            repo </a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="d-flex flex-column m-4 ">
+                        <p class="fs-5 text-light opacity-50">Community
+                        </p>
+                        <a href="" class=" text-light opacity-50 link-underline-opacity-0 link-offset-2 link-underline">
+                            Issues</a>
+                        <a href=""
+                            class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">Discussions</a>
+                        <a href="" class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline""> Corporate sponsors</a>
+                        <a href="" class=" text-light opacity-50 link-underline-opacity-0 link-offset-2
+                            link-underline">Open Collective</a>
+                        <a href=""
+                            class="text-light opacity-50  link-underline-opacity-0 link-offset-2 link-underline">Stack
+                            Overflow </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
